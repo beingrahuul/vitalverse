@@ -8,6 +8,8 @@ const Container = styled.div`
     align-items: center;
     padding: 0 1rem;
     height: 80px;
+    max-width: 1920px;
+    margin: 0 auto;
     background-color: #f5f5f5;
     color: #000;
 `

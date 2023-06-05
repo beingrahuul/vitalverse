@@ -4,11 +4,11 @@ const images = {
     "first": "https://images.unsplash.com/photo-1685123466319-d7d8bae569d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80",
     "second": "https://images.unsplash.com/photo-1685596411704-56c5dff3b84c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80",
     "third": "https://images.unsplash.com/photo-1685566177611-a607e0b46d7c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80"
-  
   }
 
 const Container = styled.div`
     display: flex;
+    max-width: 1600px;
     justify-content: space-between;
     flex-direction: column;
     background-color: #f5f5f5;
@@ -129,7 +129,7 @@ function HeaderBlog() {
     <Container>
         <HeaderContainer>
             <HeaderImageContainer>
-                <HeaderImage src={images.third} />
+                <HeaderImage src={images.first} />
             </HeaderImageContainer>
             <InfoContainer>
                 <BlogTile>The story behind every song on japanese breakfasts new album</BlogTile>

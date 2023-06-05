@@ -13,6 +13,8 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  margin: 0 auto;
+  width: 1600px;
   padding: 0 1rem;
   background-color: #f5f5f5;
   color: #000;
