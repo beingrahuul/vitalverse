@@ -14,7 +14,7 @@ const Container = styled.div`
   justify-content: space-between;
   flex-direction: column;
   margin: 0 auto;
-  width: 1600px;
+  max-width: 1400px;
   padding: 0 1rem;
   background-color: #f5f5f5;
   color: #000;
@@ -28,6 +28,11 @@ const BottomContainer = styled.div`
     background-color: #fff;
     border-radius: 1rem;
     margin: 1rem 0rem;
+
+    //Ipad
+    @media (min-width: 426px) and (max-width: 1000px){
+        flex-direction: column;
+    }
 `
 
 const Main = styled.div`
@@ -36,6 +41,11 @@ const Main = styled.div`
     flex-direction: column;
     width: 60%;
     padding: 1rem;
+
+    //Ipad
+    @media (min-width: 426px) and (max-width: 1000px){
+        width: 100%;
+    }
 `
 
 const Paragraph = styled.div`
@@ -67,6 +77,11 @@ const Left = styled.div`
     flex-direction: column;
     gap: 1rem;
     margin: 1rem;
+
+    //Ipad
+    @media (min-width: 426px) and (max-width: 1000px){
+        margin: 0 auto;
+    }
 `
 
 const SuggestionContainer = styled.div`
@@ -76,6 +91,15 @@ const SuggestionContainer = styled.div`
   margin: 1rem;
   border-left: 4px solid #000;
   padding-left: 4rem;
+
+  //Ipad
+  @media (min-width: 426px) and (max-width: 1000px){
+        flex-direction: row;
+        border-left: none;
+        margin: 0rem;
+        padding-left: 0rem;
+        gap: 0.5rem;
+    }
 `
 
 const Title = styled.div`
@@ -83,6 +107,11 @@ const Title = styled.div`
   font-weight: 500;
   font-style: italic;
   margin: 1rem;
+
+  //Ipad
+  @media (min-width: 426px) and (max-width: 1000px){
+        display: none;
+    }
 `
 
 function Blog() {

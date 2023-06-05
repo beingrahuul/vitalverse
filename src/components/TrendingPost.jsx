@@ -10,6 +10,9 @@ const Container = styled.div`
     align-items: center;
     justify-content: center;
     border-radius: 1rem;
+    @media (min-width: 426px) and (max-width: 1000px){
+        width: 200px;
+    }
 `
 
 const PostImageContainer = styled.div`
@@ -24,6 +27,11 @@ const PostImageContainer = styled.div`
         width: 240px;
         object-fit: cover;
         border-radius: 1rem;
+        
+        //Ipad
+        @media (min-width: 426px) and (max-width: 1000px){
+            width: 200px;
+        }
     }
 `
 
@@ -68,6 +76,12 @@ const BlogTile = styled.div`
     cursor: pointer;
     &:hover {
         text-decoration: underline;
+    }
+
+    //Ipad
+    @media (min-width: 426px) and (max-width: 1000px){
+        font-size: 0.7rem;
+        text-align: left;
     }
 `
 

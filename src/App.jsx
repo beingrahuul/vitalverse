@@ -4,6 +4,7 @@ import About from "./pages/About"
 import Search from "./pages/Search"
 import Blog from "./pages/Blog"
 import Navbar from "./components/Navbar"
+import Footer from "./components/Footer"
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
       <Route path="/blog/:id" element={<Blog />} />
       <Route path="*" element={<h1>Not Found</h1>} />
     </Routes>
+    <Footer />
    </BrowserRouter>
   )
 }

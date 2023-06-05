@@ -8,12 +8,13 @@ const images = {
 
 const Container = styled.div`
     display: flex;
-    max-width: 1600px;
+    max-width: 1400px;
     justify-content: space-between;
     flex-direction: column;
     background-color: #f5f5f5;
     color: #000;
     overflow: hidden;
+    
 `
 
 const HeaderContainer = styled.div`
@@ -30,6 +31,11 @@ const HeaderImageContainer = styled.div`
     align-items: center;
     justify-content: center;
     border-radius: 1rem;
+    
+    //Ipad
+    @media (min-width: 426px) and (max-width: 1000px){
+        height: 400px;
+    }
 `
 const HeaderImage = styled.img`
     width: 100%;
@@ -50,6 +56,10 @@ const InfoContainer = styled.div`
     gap: 1rem;
     color: #fff;
     border-radius: 1rem;
+    //Ipad
+    @media (min-width: 426px) and (max-width: 1000px){
+        width: 100%;
+    }
 `
 
 const GenreContainer = styled.div`
@@ -85,6 +95,11 @@ const BlogTile = styled.div`
     font-weight: 500;
     text-decoration: underline;
     text-shadow: 2px 1px 5px black;
+    
+    //Ipad
+    @media (min-width: 426px) and (max-width: 1000px){
+        font-size: 1.5rem;
+    }
 `
 
 const AuthorContainer = styled.div`
